@@ -14,14 +14,14 @@
         <h1>Sign up</h1>
         <form  method="POST" action="https://formspree.io/f/mjvlpard">
             <p>Username</p>
-            <input type="text" name="name" placeholder="Enter Username">
+            <input type="text" name="name" placeholder="Enter Username" required>
             <p>Phone number</p>
-            <input type="text" name="number" placeholder="Enter Your Phone number" id="number"> <span id="confirm"> </span>
+            <input type="text" name="number" placeholder="Enter Your Phone number" id="number"> <span id="confirm" required> </span>
             <p>Password</p>
-            <input type="password" name="password" placeholder="Enter password" id="password">
+            <input type="password" name="password" placeholder="Enter password" id="password" required>
             <p> Repaet your password</p>
-            <input type="password" name="confirm password" placeholder="repeat your password" id="confirm_password">
-  <input type="submit" name="" value="Sign up" onclick="formsubmit()">
+            <input type="password" name="confirm password" placeholder="repeat your password" id="confirm_password" required>
+  <input type="submit" name="submit" value="Sign up" onclick="formsubmit()">
         </form>
 
     </div>
