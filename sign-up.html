@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="sign-up.css ">
+    <title>Sign up</title>
+</head>
+<body>
+  <h2> Pharoh </h2>
+
+    <div class="loginbox">
+        <img src="images-project/avatar.jpg" class="avatar">
+        <h1>Sign up</h1>
+        <form  method="POST" action="https://formspree.io/f/mjvlpard">
+            <p>Username</p>
+            <input type="text" name="" placeholder="Enter Username">
+            <p>Phone number</p>
+            <input type="text" name="" placeholder="Enter Your Phone number" id="number"> <span id="confirm"> </span>
+            <p>Password</p>
+            <input type="password" name="" placeholder="Enter password" id="password">
+            <p> Repaet your password</p>
+            <input type="password" name="" placeholder="repeat your password" id="confirm_password">
+  <input type="submit" name="" value="Sign up" onclick="formsubmit()">
+        </form>
+
+    </div>
+    <footer class="footer">
+      <p class="footer-title"> Copyrights 2022 @ <span>PHAROH</span> </p>
+    </footer>
+
+    <script>
+    var password = document.getElementById("password")
+      , confirm_password = document.getElementById("confirm_password");
+
+    function validatePassword(){
+      if(password.value != confirm_password.value) {
+        confirm_password.setCustomValidity("Passwords Don't Match");
+      } else {
+        confirm_password.setCustomValidity('');
+      }
+    }
+
+    password.onchange = validatePassword;
+    confirm_password.onkeyup = validatePassword;
+    function formsubmit(){
+      alert("Your account is ready welcome our new pharoh,confirmation mail will be send as soon as possible");
+    }
+
+
+</script>
+
+
+
+
+</body>
+</html>
