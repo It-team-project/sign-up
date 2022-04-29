@@ -13,15 +13,17 @@
         <img src="images-project/avatar.jpg" class="avatar">
         <h1>Sign up</h1>
         <form  method="POST" action="https://formspree.io/f/mjvlpard">
-            <p>Username</p>
-            <input type="text"  placeholder="Enter Username" required>
-            <p>Phone number</p>
-            <input type="text" placeholder="Enter Your Phone number" required>
-            <p>Password</p>
-            <input type="password" placeholder="Enter password" id="password" required>
-            <p> Repaet your password</p>
-            <input type="password" placeholder="repeat your password" id="confirm_password" required>
-  <input type="submit" value="Sign up" onclick="formsubmit()" required>
+          <label for="username">Username:</label>
+<input type="text" id="username" name="username" placeholder="Name" required>
+         <label for="phone number" id="phone ">Phone number:</label>
+         <br> <br>
+<input type="text" name="phone number" pattern="[0-9]{10}" placeholder="number" required>
+        <label for="password">password:</label>
+<input type="password" id="password" name="password" placeholder="password (prefer to be strong)" required>
+      <label for="password">confirm password:</label>
+ <input type="password" id="confirm_password" name="password" placeholder="Confirm password" required>
+
+  <input type="submit" value="Sign up" onclick="formsubmit()"  required>
         </form>
 
     </div>
